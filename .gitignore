@@ -1,12 +1,50 @@
-# Virtual environment
-.venv/
-
-# Python cache
+# Python cache files
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
 
-# Jupyter files
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter Notebook
 .ipynb_checkpoints/
 
-# VS Code settings
+# Python environment files
+.python-version
+
+# IDE settings
 .vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+
+# Environment variables and secrets
+.env
+.env.*
+
+# Build and distribution files
+build/
+dist/
+*.egg-info/
+
+# Testing and coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Streamlit secrets
+.streamlit/secrets.toml

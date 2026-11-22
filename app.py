@@ -166,7 +166,7 @@ for model_name in models.keys():
         "Accuracy": model_metrics["accuracy"] * 100,
         "At Risk Precision": model_metrics["precision"] * 100,
         "At Risk Recall": model_metrics["recall"] * 100,
-        "Macro F1": model_metrics["macro_f1"]
+        "Macro F1": model_metrics["macro_f1"] * 100
     })
 
 performance_df = pd.DataFrame(performance_data)
@@ -196,7 +196,7 @@ display_df["At Risk Recall"] = display_df["At Risk Recall"].map(
 )
 
 display_df["Macro F1"] = display_df["Macro F1"].map(
-    lambda value: f"{value:.4f}"
+    lambda value: f"{value:.2f}%"
 )
 
 st.dataframe(
